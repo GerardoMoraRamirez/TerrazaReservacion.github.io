@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <script src="Reservar.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/reservar.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form class="form">
+        <h1 class="form_title">Reservación</h1>
+
+        <div class="form_container">
+            <div class="form_group">
+                <b>Fecha:</b><br>
+                <h4><label id="dia" class="form_fecha"></label>
+                    <label class="form_fecha">/</label>
+                    <label id="mes" class="form_fecha"></label>
+                    <label  class="form_fecha">/</label>
+                    <label id="anio" class="form_fecha"></label>
+                </h4>
+            </div>
+            <div class="form_group">
+                <input type="text" id="Nombre" class="form_input" placeholder=" ">
+                <label for="Nombre" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="ApellidoP" class="form_input" placeholder=" ">
+                <label for="ApellidoP" class="form_label">Primer apellido</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="ApellidoM" class="form_input" placeholder=" ">
+                <label for="ApellidoM" class="form_label">Segundo apellido</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="Horario" class="form_input" placeholder=" ">
+                <label for="Horario" class="form_label">Horario</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="Detalle" class="form_input" placeholder=" ">
+                <label for="Detalle" class="form_label">Detalle</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" maxlength="12" id="Telefono" class="form_input" placeholder=" ">
+                <label for="Telefono" class="form_label">Teléfono</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" id="Costo" class="form_input" placeholder=" ">
+                <label for="Costo" class="form_label">Costo</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" id="Deposito" class="form_input" placeholder=" ">
+                <label for="Deposito" class="form_label">Depósito</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="DetalleD" class="form_input" placeholder=" ">
+                <label for="DetalleD" class="form_label">Detalle Depósito</label>
+                <span class="form_line"></span>
+            </div>
+            <div>
+                <a href="Index.html"><button class="form_submit" id="btnGuardar" type="button">Cancelar</button></a>
+                <button class="form_submitGuardar" id="btnGuardar" onclick="Guardar()" type="button">Guardar</button>
+                <button class="form_submitRecibo" id="btnRecibos" onclick="Recibos()" type="button">Recibos</button>
+                <button class="form_submitEliminar" id="btnEliminar" onclick="Eliminar()" type="button">Eliminar</button>
+                
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
